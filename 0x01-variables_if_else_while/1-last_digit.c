@@ -6,7 +6,7 @@
 /**
  * main - This program prints the last digits of values in a variable
  *
- * Return: This should be 0 if successful
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -24,5 +24,6 @@ int main(void)
 	else if (m < 6 && m != 0)
 		printf("last digit of %d is %d and is less than 6 and not 0", n, m);
 	printf("\n");
+
 	return (0);
 }
