@@ -1,27 +1,25 @@
 #include <stdio.h>
-
 /**
- * main - find first 50 fibronacci number
+ * main - main function
  * Return: 0
  */
 
 int main(void)
 {
-        unsigned long int term1 = 1;
-        unsigned long int term2 = 2;
-        unsigned long int next;
-        int i;
+	int limit = 4000000;
+	int term1 = 1;
+	int term2 = 2;
+	int next;
+	int sum = 2;
 
-        printf("%lu, ", term1);
-        for (i = 1 ; i < 50 ; i++)
-        {
-                printf("%lu", term2);
-                next = term1 + term2;
-                term1 = term2;
-                term2 = next;
-                if (i != 49)
-                        printf(", ");
-        }
-        printf("\n");
-        return (0);
+	while (next <= limit)
+	{
+		next = term1 + term2;
+		if (next % 2 == 0)
+			sum = sum + next;
+		term1 = term2;
+		term2 = next;
+	}
+	printf("%d\n", sum);
+	return (0);
 }
