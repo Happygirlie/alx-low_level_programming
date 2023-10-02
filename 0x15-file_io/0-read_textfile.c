@@ -1,5 +1,12 @@
 #include "main.h"
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/stat.h>
+#include <sys/types.h>
+#include <fontl.h>
+#include <unistd.h>
+
 /**
  * read_textfile - A function that reads a textfile and prints it.
  * @filename: The filename used.
