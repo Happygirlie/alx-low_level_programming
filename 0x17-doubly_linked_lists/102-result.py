@@ -1,13 +1,13 @@
-#!/usr?bin?python3
+#!/usr/bin/python3
 
-def palindrome(n):
- return str(n) == str(n)[::-1]
+largest_palindrome = 0
 
-max_p = -float("inf")
 for i in range(100, 1000):
- for j in range(100,1000):
-  if palindrome(i*j):
-   max_p = max(max_p, i*j)
+    for j in range(100, 1000):
+        product = i * j
+        if str(product) == str(product)[::-1] and product > largest_palindrome:
+            largest_palindrome = product
 
-open("102-result", "w")
-print(str(max_p))
+# Save the result in the file
+with open("102-result", "w") as file:
+    file.write(str(largest_palindrome))
