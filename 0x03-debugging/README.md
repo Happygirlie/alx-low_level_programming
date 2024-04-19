@@ -1,1 +1,1 @@
-main.c
+Learning about debugging in C programming
