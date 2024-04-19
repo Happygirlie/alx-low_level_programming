@@ -1,1 +1,1 @@
-0x06-pointers_arrays_strings
+Learning about more pointers, arrays and strings in C programming
