@@ -1,1 +1,1 @@
-0x07-pointers_arrays_strings
+Learning about even more pointers, arrays and strings in C programming
