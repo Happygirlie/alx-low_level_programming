@@ -1,1 +1,1 @@
-C programming is fun
+Learning about variables, if, else, while in C programming
