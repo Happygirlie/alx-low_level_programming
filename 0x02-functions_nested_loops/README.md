@@ -1,1 +1,1 @@
-functions_nested_loops
+Learning about functions and nested loops in C programming
